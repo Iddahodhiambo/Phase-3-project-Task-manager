@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   #@method: create a new user
-  post '/auth/register' do
+  post '/signup' do
     begin
       x = User.create(@user)
       json_response(code: 201, data: x)
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   end
 
   #@method: log in user using email and password
-  post '/auth/login' do
+  post '/login' do
     begin
       user_data = User.find_by(email: @user['email'])
       if user_data.password == @user['password']
@@ -41,5 +41,5 @@ class UsersController < ApplicationController
   def user_data
     JSON.parse(request.body.read)
   end
-  
+
 end
