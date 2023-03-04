@@ -23,11 +23,13 @@ gem "activerecord", "~> 6.1"
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
 gem "sinatra-activerecord", "~> 2.0"
-gem "devise"
+gem "bcrypt"
 
 # Run common tasks from the command line
 # https://github.com/ruby/rake
 gem "rake", "~> 13.0"
+
+gem 'psych', '< 4.0.0'
 
 # Provides functionality to interact with a SQLite3 database
 gem "sqlite3", "~> 1.4"
