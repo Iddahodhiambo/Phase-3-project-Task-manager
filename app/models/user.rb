@@ -1,4 +1,4 @@
-class Task < ActiveRecord::Base
+class User < ActiveRecord::Base
     belongs_to :user
     # table consists of password_hash as a column to store password hashes in DB
   include BCrypt
