@@ -18,7 +18,6 @@ class TasksController < ApplicationController
           completion_status: params[:completion_status]
         )
         task.to_json
-      binding.pry
       end
       
       put '/tasks/:id' do
