@@ -1,4 +1,3 @@
-require 'pry'
 class UsersController < ApplicationController
       # @helper: read JSON body
   before do
